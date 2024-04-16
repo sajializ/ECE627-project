@@ -188,3 +188,30 @@
 
 <owl:ObjectProperty rdf:about="http://example.com/ontology/travel/#hasAmenity">
     <rdfs:domain rdf:resource="http://example.com/ontology/travel/#HotelRoom"/>
+    <rdfs:range rdf:resource="http://example.com/ontology/travel/#Amenity"/>
+    <rdfs:comment>A hotel room has specific amenities.</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://example.com/ontology/travel/#hasSpecialOffer">
+    <rdfs:domain rdf:resource="http://example.com/ontology/travel/#TravelAgency"/>
+    <rdfs:range rdf:resource="http://example.com/ontology/travel/#SpecialOffer"/>
+    <rdfs:comment>A travel agency has special offers available.</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://example.com/ontology/travel/#hasPolicy">
+    <rdfs:domain rdf:resource="http://example.com/ontology/travel/#Service"/>
+    <rdfs:range rdf:resource="http://example.com/ontology/travel/#Policy"/>
+    <rdfs:comment>A service (like a flight, hotel, or rental) has specific policies.</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://example.com/ontology/travel/#requiresDocumentation">
+    <rdfs:domain rdf:resource="http://example.com/ontology/travel/#TravelService"/>
+    <rdfs:range rdf:resource="http://example.com/ontology/travel/#Documentation"/>
+    <rdfs:comment>A travel service requires specific documentation (e.g., visa, passport).</rdfs:comment>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="http://example.com/ontology/travel/#hasTravelClass">
+    <rdfs:domain rdf:resource="http://example.com/ontology/travel/#Flight"/>
+    <rdfs:range rdf:resource="http://example.com/ontology/travel/#TravelClass"/>
+    <rdfs:comment>A flight has different travel classes (e.g., economy, business).</rdfs:comment>
+</owl:ObjectProperty>
